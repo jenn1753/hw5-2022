@@ -144,7 +144,8 @@ header{
         font-family: Arial, Helvetica;
         background-image: none;
     }
-
+    
+/*  make flexbox so header items can stack vertically */
     header{
         display: flex;
         flex-direction: column;
@@ -155,7 +156,8 @@ header{
     nav{
         width: 100%;
     }
-
+    
+/* made flexbox for nav items so they can lay in a row horizonally */
     .nav_links{
         display: flex;
         flex-direction: row;
@@ -164,7 +166,7 @@ header{
 
     } 
     
-
+/* create flexbox to allign card items at the bottom */
     .pricing{
         display: flex;
         align-items: flex-end;
@@ -174,11 +176,13 @@ header{
         border: 2px solid #45ADDD;
         flex-basis: 325px;
     }
-
+    
+/* hide gallery header text */
     #gallery{
         visibility: hidden;
     }
     
+/* remove gallery picture items from print view */
     .gallery{
         display: none;
     }
@@ -186,7 +190,8 @@ header{
     .logo{
         animation: none;
     }
-
+    
+/*     add emoji to every card's second list item  */
     .card li:nth-child(2):after{
         content: "👍";
     }
