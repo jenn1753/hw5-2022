@@ -1,6 +1,6 @@
+/* create animation */
 #logo{
     animation: mymoves 5s;
-    /* would like header image to be centered */
 }
 
 @keyframes mymoves{
@@ -14,7 +14,7 @@ body{
     background: url("/images/concrete_seamless.png"), #f1f1f1; 
   
 }
-
+/* flebox for the header  */
 header{
     display: flex;
     flex-direction: column;
@@ -22,6 +22,7 @@ header{
     align-items: center;
 }
 
+/* flexbox for nav_links */
 .nav_links{
     display: flex;
     flex-wrap: nowrap;
@@ -29,13 +30,14 @@ header{
     align-items: center;
 }
 
+/* no change in color after visiting link */
 .nav_links a:link, a:hover, a:visited, a:active{
     color: blue; 
     text-decoration: underline;
     text-decoration-style: solid;
 }
 
-
+/* make sure card has specified radius and can scroll under navbar */
 .card{
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -54,6 +56,7 @@ header{
 
 }
 
+/* flexbox for card items */
 .pricing{
     display: flex;
     justify-content: center;
@@ -67,6 +70,7 @@ header{
     
 }
 
+/* flexbox for picture gallery */
 .gallery{
     display: flex;
     flex-wrap: wrap;
@@ -81,6 +85,7 @@ header{
     margin: 10px;
 }
 
+/* mobile view where card items stack vertically */
 @media only screen and (max-width: 900px){
     .pricing {
         display: flex;
@@ -96,7 +101,7 @@ header{
 
 }
 
-
+/* Desktop view with sticky nav bar and cards displayed in a row */
 @media only screen and (min-width: 900px){
     header{
         display: flex;
@@ -126,13 +131,14 @@ header{
     /* nav bar  */
 }
 
-
+/* take away logo animation in reduced motion  */
 @media (prefers-reduced-motion: reduce){
     #logo{
         animation: none;
     }
 }
 
+/* print view */
 @media print{
     body{
         font-family: Arial, Helvetica;
